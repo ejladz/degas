@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.Big_Painting {
+    width: 200px;
+}
+
+
+
+.Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.Container .Big_Painting {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.Container .Text {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Container .Other_Paintings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2;
+    grid-row: 2;
+}
